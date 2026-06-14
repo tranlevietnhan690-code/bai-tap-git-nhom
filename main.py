@@ -1,2 +1,6 @@
 def tinh_thue_thu_nhap(thu_nhap):
-    return thu_nhap * 0.1
+    # Kết hợp logic: Giảm trừ 4 triệu của A và tính thuế 10% của B
+    thu_nhap_tinh_thue = thu_nhap - 4000000
+    return max(0, thu_nhap_tinh_thue * 0.1)
+
+print("Thue cua ban phai nop la:", tinh_thue_thu_nhap(10000000))
